@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head') -%>
+</head>
+
+<body>
+    <%- include('partials/nav') -%>
+
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1 class="text-center my-5">New CEO</h1>
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="ceo_name" class="form-label">CEO Name</label>
+                        <input type="text" class="form-control" name="ceo_name" id="ceo_name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="ceo_year" class="form-label">Year Appointed</label>
+                        <input type="text" class="form-control" name="ceo_year" id="ceo_year">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add New CEO</button>
+                </form>
+            </div>
+        </div>
+
+</body>
+
+</html>
